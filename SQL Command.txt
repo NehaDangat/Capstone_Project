@@ -1,0 +1,31 @@
+// Create Database
+
+CREATE DATABASE "employeeinfo";
+
+
+//Create Table
+
+CREATE TABLE employee (
+  EmployeeID int PRIMARY KEY,
+  EmployeeName VARCHAR(50) NOT NULL,
+  DateOfBirth VARCHAR(50) NOT NULL
+);
+
+
+//Insert Record into table
+
+INSERT INTO employee (employeeid, employee_name, date_of_birth)
+VALUES
+  (1,'Neha', '1990-05-12'),
+  (2,'Rani', '1995-07-24'),
+  (3,'Shubham', '1988-11-02'),
+  (4,'Amit', '1992-03-18'),
+  (5,'Partik', '1985-09-06'),
+  (6,'Aishu', '1993-02-22'),
+  (7,'Hemant', '1987-06-15'),
+  (8,'Asha', '1994-08-31'),
+  (9,'Shekhar', '1989-12-25'),
+  (10,'Snehal', '1991-04-08');
+
+//Veiw Record 
+select * from employee;

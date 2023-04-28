@@ -1,0 +1,27 @@
+For Kubernets Online Platform sach as killercoda
+
+commands in killercoda for kubernets.
+
+1. kubectl get pods
+2. ls
+3. cd filesystem
+	//create mysql.yml file in filesystem
+4. kubectl apply -f (yml file name)
+	// if status is running then use 
+5. kubectl get pods //to check status
+	//create deploy.yml file in filesystem
+6. kubectl apply -f (yml file name)
+7. kubectl get pods 
+8. kubectl logs (create running continaer name)
+	//Project run
+9. kubectl exec -it (mysqlcreated name) /bin/bash
+10.mysql -h mysql -u root -p
+	//Enter password :- mysqlpassword
+11. Enter SQL Command
+12. Exit two times 
+13. kubectl port-forword service springboot-curd-svc 8446:8585
+
+
+New Tab 
+
+1. curl -k https://localhost:1999/employee/getEmployeeByEmployeeId/1 	
